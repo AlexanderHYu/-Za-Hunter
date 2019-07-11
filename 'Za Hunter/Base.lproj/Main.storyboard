@@ -76,15 +76,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EzC-9B-hao">
-                                <rect key="frame" x="107" y="337" width="200" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="06D-lj-eLS"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1Y-eX-NGC">
                                 <rect key="frame" x="107" y="492" width="200" height="50"/>
                                 <constraints>
@@ -94,18 +85,47 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EzC-9B-hao">
+                                <rect key="frame" x="107" y="337" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="06D-lj-eLS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xRZ-Kr-dvd">
+                                <rect key="frame" x="170" y="637" width="74" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="DIrection"/>
+                                <connections>
+                                    <action selector="onDirectionButtonTapped:" destination="dZy-PC-iLt" eventType="touchUpInside" id="M90-Ss-AE0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F6m-f8-jFL">
+                                <rect key="frame" x="174" y="706" width="66" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Website"/>
+                                <connections>
+                                    <action selector="onWebsiteButtonTapped:" destination="dZy-PC-iLt" eventType="touchUpInside" id="Nh8-BI-ppw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="DGo-XF-bu1" firstAttribute="leading" secondItem="EzC-9B-hao" secondAttribute="leading" id="1wX-wP-jXi"/>
                             <constraint firstItem="0j8-Jj-Y4V" firstAttribute="bottom" secondItem="i1Y-eX-NGC" secondAttribute="bottom" constant="320" id="61a-KU-fea"/>
                             <constraint firstItem="DGo-XF-bu1" firstAttribute="top" secondItem="0j8-Jj-Y4V" secondAttribute="top" constant="112" id="6PD-et-mB5"/>
+                            <constraint firstItem="xRZ-Kr-dvd" firstAttribute="centerX" secondItem="i1Y-eX-NGC" secondAttribute="centerX" id="Cr5-CC-ZcP"/>
                             <constraint firstItem="DGo-XF-bu1" firstAttribute="centerX" secondItem="7Yl-Mt-J9q" secondAttribute="centerX" id="Ea8-Xu-dbU"/>
                             <constraint firstItem="DGo-XF-bu1" firstAttribute="leading" secondItem="0j8-Jj-Y4V" secondAttribute="leading" constant="107" id="JZ2-Xg-yoK"/>
+                            <constraint firstItem="F6m-f8-jFL" firstAttribute="centerX" secondItem="xRZ-Kr-dvd" secondAttribute="centerX" id="Tak-5g-kIs"/>
                             <constraint firstItem="EzC-9B-hao" firstAttribute="trailing" secondItem="i1Y-eX-NGC" secondAttribute="trailing" id="Tf0-ey-KTJ"/>
                             <constraint firstItem="EzC-9B-hao" firstAttribute="leading" secondItem="i1Y-eX-NGC" secondAttribute="leading" id="eRm-zU-PzQ"/>
                             <constraint firstItem="DGo-XF-bu1" firstAttribute="trailing" secondItem="EzC-9B-hao" secondAttribute="trailing" id="hhy-Fq-NnB"/>
+                            <constraint firstItem="F6m-f8-jFL" firstAttribute="top" secondItem="xRZ-Kr-dvd" secondAttribute="bottom" constant="35" id="kxc-76-asw"/>
                             <constraint firstItem="EzC-9B-hao" firstAttribute="top" secondItem="DGo-XF-bu1" secondAttribute="bottom" constant="87" id="ulX-3c-wN1"/>
+                            <constraint firstItem="xRZ-Kr-dvd" firstAttribute="top" secondItem="i1Y-eX-NGC" secondAttribute="bottom" constant="95" id="yd7-FN-DLw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0j8-Jj-Y4V"/>
                     </view>
